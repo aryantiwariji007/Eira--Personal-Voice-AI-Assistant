@@ -9,7 +9,7 @@ You speak to it through your microphone. It works out an answer with an LLM agen
 
 - 🎤 **Continuous voice input**: listens automatically as soon as the app loads; no buttons to press.
 - 📝 **Speech-to-text** with Groq's hosted `whisper-large-v3`.
-- 🧠 **Agentic reasoning** with Google Gemini (`gemini-3.5-flash`) through a LangGraph ReAct agent.
+- 🧠 **Agentic reasoning** with Google Gemini (`gemini-3.6-flash`) through a LangGraph ReAct agent.
 - 👀 **Vision on demand**: the agent decides on its own when to take a webcam snapshot and analyse it with Groq's `llama-4-maverick` vision model.
 - 🔊 **Text-to-speech** with gTTS (free, the default) or ElevenLabs (higher quality, needs a key).
 - 🖥️ **Web UI** built with Gradio: live webcam feed plus chat history.
@@ -133,7 +133,7 @@ Open **<http://localhost:7861>** in your browser. Gradio also prints a temporary
 
 - **Switch to ElevenLabs voices**: in [main.py](main.py), uncomment the `text_to_speech_with_elevenlabs(...)` line and comment out the gTTS one. Change `voice_id` in [text_to_speech.py](text_to_speech.py) to use a different voice.
 - **Change the personality**: edit `system_prompt` in [ai_agent.py](ai_agent.py).
-- **Change the LLM**: change `model="gemini-3.5-flash"` in [ai_agent.py](ai_agent.py).
+- **Change the LLM**: change `model="gemini-3.6-flash"` in [ai_agent.py](ai_agent.py).
 - **Change port / disable public sharing**: edit the `demo.launch(...)` arguments at the bottom of [main.py](main.py).
 
 ---

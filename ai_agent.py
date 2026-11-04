@@ -17,7 +17,7 @@ system_prompt = """You are Eira — a witty, clever, and helpful assistant"
 
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-3.5-flash",
+    model="gemini-3.6-flash",
     temperature=0.7,
 )
 
