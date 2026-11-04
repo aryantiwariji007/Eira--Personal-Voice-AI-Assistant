@@ -63,5 +63,5 @@ def analyze_image_with_query(query: str) -> str:
     )
     return chat_completion.choices[0].message.content
 
-query="How many people do you see?"
-print(analyze_image_with_query(query))            
+#query="How many people do you see?"
+#print(analyze_image_with_query(query))            

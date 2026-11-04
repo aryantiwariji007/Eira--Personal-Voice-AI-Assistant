@@ -17,7 +17,7 @@ def convert_mp3_to_wav(mp3_file):
     sound.export(wav_file, format="wav")
     return wav_file
 def text_to_speech_with_elevenlabs(input_text, output_filepath):
-    client=ElevenLabs(api_key="ELEVENLABS_API_KEY")
+    client=ElevenLabs(api_key=ELEVENLABS_API_KEY)
     audio=client.text_to_speech.convert(
         text= input_text,
         voice_id="eUdJpUEN3EslrgE24PKx", #"JBFqnCBsd6RMkjVDRZzb",

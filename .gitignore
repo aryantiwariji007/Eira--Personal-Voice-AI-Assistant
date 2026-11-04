@@ -8,3 +8,25 @@ wheels/
 
 # Virtual environments
 .venv
+
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Runtime-generated audio (recordings, TTS output, test clips)
+*.mp3
+*.wav
+
+# Webcam snapshots captured by the vision tool
+sample.jpg
+
+# Gradio
+.gradio/
+flagged/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
